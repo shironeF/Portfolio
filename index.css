@@ -1,8 +1,9 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Phudu:wght@300&family=Roboto+Slab&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 }
 
 #header{
-    background-image: url(https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=lU3O_StTvz8AX_ir2f-&tn=YSZ4dZVDve4gZ9-n&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfDKNa-9K8dgGJfB0ZUjBG85zUvxvkZCaX0W46N-4iINgA&oe=641DAED6);
+    background-image: url(https://ik.imagekit.io/theartling/prod/original_images/Sarah_Lee_Gesturebation.jpg?tr=w-1650);
     height: 100vh;
     width: 100vw;
     background-position: center;
