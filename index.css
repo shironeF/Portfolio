@@ -1,40 +1,134 @@
-  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Phudu:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:wght@400;500;700&family=Phudu:wght@300&family=Roboto+Slab&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-}
+    font-family: 'Dancing Script';
+} 
 
 body{
     background-color: white;
 }
 
 #header{
-    background-image: url(https://ik.imagekit.io/theartling/prod/original_images/Sarah_Lee_Gesturebation.jpg?tr=w-1650);
+    background-image: url(./img/pexels-scott-webb-3255761.jpg);
     height: 100vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
 }
 
-#navbarlinks{
-    color: black;
-    font-size: x-large;
+#navcontainer{
+    padding: 10px 10%;
 }
 
-#navbarlinks:hover{
-    background-color: pink;
+#brandlogo{
+    margin: 10px;
+    width: auto;
+    height: 100px;
+}
+
+#name{
+    color: #36454F	;
+    font-size: 30px;
+    position: relative;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+#navbarlinks{
+    color: #36454F;
+    font-size: 30px;
+    position: relative;
+    text-decoration: none;
 }
 
 #navtable{
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#Name{
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #913831;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#name::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #913831;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#name:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 10px;
+    color: #36454F;
+}
+/* end of navbar css*/
+
+#about{
+    padding: 50px 50px;
+}
+
+.row{
     display: flex;
-    align-items: left;
-    color: black;
-    font-size: xx-large;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutmeimg{
+    width: 80%;
+    border-radius: 20px;
+}
+.about-col-1{
+    flex-basis: 25%;
+}
+.about-col-2{
+    flex-basis: 75%;
+}
+
+.about-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #36454F;
+}
+
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    
 }
