@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:wght@400;500;700&family=Phudu:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@700&family=Kalam:wght@700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script';
+    font-family: 'Kalam', cursive;
+
 } 
 
 body{
     background-color: white;
+    overflow-x: hidden;
 }
 
 #header{
@@ -100,6 +104,11 @@ nav ul li a:hover::after{
 
 #about{
     padding: 50px 50px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
 }
 
 .row{
@@ -124,11 +133,73 @@ nav ul li a:hover::after{
     color: #36454F;
 }
 
-.tab-title{
+.tab-titles{
     display: flex;
     margin: 20px 0 40px;
 }
 
 .tab-links{
-    
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #913831;
+    position: absolute;
+    left: 0;    
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.about-content{
+    font-size: 28px;
+}
+
+.about-content span{
+    color: #DE3163  ;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.tab-contents ul li span{
+    color: #913831;
+    font-size: 25px;
+}
+
+.tab-titles p span{
+    color: #913831;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/*end of about css*/
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
