@@ -10,12 +10,12 @@
 } 
 
 body{
-    background-color: white;
+    background-color: #36454F;
     overflow-x: hidden;
 }
 
 #header{
-    background-image: url(./img/pexels-scott-webb-3255761.jpg);
+    /*background-image: url(./img/pexels-scott-webb-3255761.jpg);*/
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -33,7 +33,7 @@ body{
 }
 
 #name{
-    color: #36454F	;
+    color: #F9F6EE;
     font-size: 30px;
     position: relative;
     text-decoration: none;
@@ -41,7 +41,7 @@ body{
 }
 
 #navbarlinks{
-    color: #36454F;
+    color: #F9F6EE;
     font-size: 30px;
     position: relative;
     text-decoration: none;
@@ -98,17 +98,19 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 10px;
-    color: #36454F;
+    color: #F9F6EE;
+}
+
+.header-text p{
+    color: #EDEADE;
 }
 /* end of navbar css*/
 
 #about{
     padding: 50px 50px;
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background: white;
     height: 100vh;
     width: 100vw;
-    background-position: center;
-    background-size: cover;
 }
 
 .row{
@@ -195,7 +197,6 @@ nav ul li a:hover::after{
 
 #services{
     padding: 30px 0;
-    text-align: center;
 }
 
 .services-list{
@@ -210,6 +211,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #36454F;
+    text-align: center;
 }
 
 .services-list div{
@@ -218,14 +220,17 @@ nav ul li a:hover::after{
         font-size: 13px;
         font-weight: 300;
         border-radius: 10px;
-        color: white;
-        margin-left: 10px;
+        border-right: 10px;
+        color: #F9F6EE;
+        margin-left: 50px;
+        margin-right: 50px;
+        transition: background 0.5s, transform 0.5s;
 }
 
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-    color: white;
+    color: #F9F6EE;
 }
 
 .services-list div h2 {
@@ -236,12 +241,58 @@ nav ul li a:hover::after{
 
 .services-list div a{
     text-decoration: none;
-    color: white;
+    color: #F9F6EE;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover{
-    background-color: ;
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+/*end of service*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
 }
