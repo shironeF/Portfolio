@@ -13,7 +13,7 @@
         <div class="container" id="navcontainer">
             <nav class="nav"  id="navtable">
                 <a href=""  id="name"><h1><span>S</span>hirone</h1></a>
-        <ul>
+        <ul id="sidemenu">
             <li class="nav-item">
               <a class="nav-link active" href="#home" id="navbarlinks"><span>H</span>ome</a>
             </li>
@@ -27,13 +27,21 @@
                 <a class="nav-link" href="#portfolio" id="navbarlinks"><span>P</span>ortfolio</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarlinks"><span>C</span>ontact</a>
-              </li>
+                <a class="nav-link" href="#contact" id="navbarlinks"><span>C</span>ontact</a>
+                <i class="fa-solid fa-xmark" id="closebtn" onclick="closemenu()"></i>
+            </li>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
+            <div class="row">
+                <div>
             <p>Jr. Software Engineer.</p>
             <h1>Hi, I'm <span style="color: orange;">Shirone</span> Fortuno, <br>  Welcome To My Portfolio.</h1>
+                </div>
+            <div>
+                <!--- <img src="img/shirone.jpg" alt="">-->
+            </div>
             </div>
         </div>
     </div>
@@ -61,7 +69,7 @@
                             <ul>
                                 <li><span>Front End</span><br>HTML, CSS, Javascript, React.</li>
                                 <li><span>Back End</span><br>PHP.</li>
-                                <li><span>Database</span><br>MySQL, Firebase.</li>
+                                <li><span>Database</span><br>MySQL, Google Firebase.</li>
                                 <li><span>CRM</span><br>Salesforce.</li>
                             </ul>
                         </div>
@@ -93,20 +101,20 @@
                 <div class="services-list">
                     <div>
                         <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>ahahahahahhahahahhhhhhhhhhhhhhhhh</p>
+                        <h2>Front-end Development</h2>
+                        <p>Front-end coding involving HTML, CSS and Javascript...</p>
                         <a href="">learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-crop-simple"></i>
-                        <h2>App Design</h2>
-                        <p>ahahahahahhahahahhhhhhhhhhhhhhhhh</p>
+                        <h2>Web Design</h2>
+                        <p>Web designing with the use of online tools such as Figma and Canva...</p>
                         <a href="">learn more</a>
                     </div>
                     <div>
                         <i class="fa-brands fa-app-store-ios"></i>
-                        <h2>App Design</h2>
-                        <p>ahahahahahhahahahhhhhhhhhhhhhhhhh</p>
+                        <h2>Back-end Development</h2>
+                        <p>Back-end coding using PHP, PHP laravel and MySQL...</p>
                         <a href="">learn more</a>
                     </div>
                 </div>
@@ -155,20 +163,25 @@
                         <p><i class="fa-solid fa-paper-plane"></i> Shironebfortuno@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> +63-995-718-2778</p>
                         <div class="social-icons">
-                            <a href=""> <i class="fa-brands fa-facebook"></i> </a>
-                            <a href=""> <i class="fa-brands fa-linkedin-in"></i> </a>
-                            <a href=""> <i class="fa-brands fa-github"></i> </a>
+                            <a href="https://www.facebook.com/shifortuno/"> <i class="fa-brands fa-facebook"></i> </a>
+                            <a href="https://www.linkedin.com/in/shirone-fortuno-696822193/"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                            <a href="https://github.com/shironeF"> <i class="fa-brands fa-github"></i> </a>
                         </div>
-                        <a href="img/WD29 Kode Breakers CV.pdf" download class="btn btn2">Download Cv</a>
+                        <a href="img/Shirone Fortuno Cv.pdf" download class="btn btn2">Download Cv</a>
                     </div>
                     <div class="contact-right">
                     <form action="">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="btn">Submit</button>
                     </form>
                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="copyright">
+                    <p>Copyright © Shirone. Made with Love <i class="fa-solid fa-heart"></i></p>
                 </div>
             </div>
         </div>
@@ -186,6 +199,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
